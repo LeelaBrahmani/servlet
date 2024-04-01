@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>servlet_project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>First</servlet-name>
+  <servlet-class>com.cyr.servlet.First</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>First</servlet-name>
+  <url-pattern>/first</url-pattern>
+  
+  </servlet-mapping>
+ <servlet>
+ <servlet-name>Second</servlet-name>
+ <servlet-class>com.cyr.servlet.Second</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Second</servlet-name>
+ <url-pattern>/second</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>Third</servlet-name>
+ <servlet-class>com.cyr.servlet.Third</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Third</servlet-name>
+ <url-pattern>/third</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>DemoServ</servlet-name>
+ <servlet-class>com.cyr.servlet.DemoServ</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>Login</servlet-name>
+ <servlet-class>com.cyr.servlet.Login</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>WelcomeServlet</servlet-name>
+ <servlet-class>com.cyr.servlet.WelcomeServlet</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>DemoServlet</servlet-name>
+ <servlet-class>com.cyr.servlet.DemoServlet</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>MySearcheer</servlet-name>
+ <servlet-class>com.cyr.servlet.MySearcher</servlet-class>
+ </servlet>
+  <servlet>
+ <servlet-name>ConfigServlet</servlet-name>
+ <servlet-class>com.cyr.servlet.ConfigServlet</servlet-class>
+ <init-param>  
+<param-name>driver</param-name>  
+<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>  
+</init-param>
+</servlet>
+ <servlet-mapping>  
+<servlet-name>ConfigServlet</servlet-name>  
+<url-pattern>/configservlet1</url-pattern>  
+</servlet-mapping>
+
+<servlet>  
+<servlet-name>ConfigServlet2</servlet-name>  
+<servlet-class>com.cyr.servlet.ConfigServlet2</servlet-class>  
+<init-param>  
+<param-name>username</param-name>  
+<param-value>system</param-value>  
+</init-param>  
+<init-param>  
+<param-name>password</param-name>  
+<param-value>oracle</param-value>  
+</init-param>  
+</servlet>  
+<servlet-mapping>  
+<servlet-name>ConfigServlet2</servlet-name>  
+<url-pattern>/configservlet2</url-pattern>  
+</servlet-mapping>
+
+
+ <servlet>
+ <servlet-name>ContextServlet</servlet-name>
+ <servlet-class>com.cyr.servlet.ContextServlet</servlet-class>
+ </servlet>
+ <context-param>  
+<param-name>dname</param-name>  
+<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>  
+</context-param> 
+<servlet-mapping>  
+<servlet-name>ContextServlet</servlet-name>  
+<url-pattern>/context</url-pattern>  
+</servlet-mapping> 
+ 
+ 
+  
+</web-app>
